@@ -1,0 +1,14 @@
+%Koutsikakis Konstantinos 
+
+% Complete Graph
+% N number of nodes
+% E = edges
+N = input ('Dose ton arithmo N:');
+E = (N*(N-1)/2);
+% adjacency matrix
+A = ones(N) - diag(diag(ones(N)));
+matrix = full(A)
+% plot graph
+figure
+g = graph(A);
+h = plot(g,'Layout','circle');
